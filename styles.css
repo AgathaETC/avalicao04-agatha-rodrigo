@@ -1,0 +1,505 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    line-height: 1.6;
+    background-color: #d2b48c;
+    color: #333;
+   
+}
+
+/* Estilo do cabeçalho */
+header {
+    text-align: center;
+    background-color: #f4e8d4;
+    padding: 10px 0;
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: 1; /*Garante que o cabeçalho fique acima da imagem*/
+    
+}
+
+.logo h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3em;
+    color: #8B4513;
+    margin-bottom: 10px;
+}
+
+/* Estilo da navegação */
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px 0;
+    background-color: #f4e8d4;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav ul li a:hover {
+    color: #c69c6d;
+}
+
+/* Estilo do banner */
+.banner {
+    position: relative;
+    text-align: center;
+    color: white;
+    width: 100%;
+    overflow: hidden;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: 100%;
+    margin: 0;
+    position: relative; /*Garante que a imagem não sobreponha o cabeçalho */
+    z-index: 0; /*Garante que a imagem fique atrás do cabeçalho */
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.5em;
+    color: #FFFFFF;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+
+
+/* Estilo das seções */
+section {
+    padding: 20px;
+    margin: 20px;
+    text-align: center; /*Centraliza todo o conteudo da seção*/
+}
+
+section h2 {
+    color: white;
+    margin-bottom: 15px;
+    font-family: "Cinzel", serif;
+    text-align: center;
+    font-size: 3rem;
+    text-align: center; /*Centraliza o titulo */
+    
+}
+
+section p{
+    font-family: "Roboto", serif;
+    color: #333;
+    line-height: 1.8;
+    text-align: center;;
+    flex: 1;
+}
+
+/* Grid layout para menu categorias*/
+.menu-grid{
+    display: grip;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+
+.menu-category{
+    color: #000;
+    font-family: "Cinzel", serif;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.menu-category h3{
+    color: #8B4513;
+    font-family: "Cinzel",serif;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.category-images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.category-images img{
+    width: 200px;
+    height: auto;
+}
+
+
+.menu-category ul{
+    list-style: none;
+    padding-left: 0;
+    color: rgba(255, 255, 255, 0.767);
+}
+
+.menu-category ul li{
+    padding: 5px 0;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2rem;
+}
+
+.menu-item{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.price{
+    font-weight: bold;
+    color: #181616bb;
+}
+
+
+
+/*Estilo da seção "Nossa História" */
+.historia-container{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.historia img{
+    max-width: 40%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.titulo-historia{
+    color: white;
+    text-align: left;
+    
+
+}
+
+.texto-historia{
+    color: #FFFFFF;
+    font-family: "Poppins", serif;
+    font-size: 1.2em;
+    
+}
+
+
+/*Estilo do formulário */
+form {
+    background-color: #f4e8d4;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input[type="text"], 
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    background-color: #c69c6d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #a17a56;
+}
+
+/* Estilo do rodapé */
+footer {
+    background-color: #c69c6d;
+    color: #333;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilização das seções sobre */
+
+.about-section img.about-img{
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    display: block;
+    margin:  0 auto 20px;
+    border-radius: 10px;
+}
+
+
+
+/* Estilização das seções sobre */
+.about-section {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #f4e8d4; /* Cor de fundo suave */
+    border-radius: 10px;
+}
+
+.about-section h2 {
+    font-family: "Cinzel", serif;
+    color: #8B4513;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.about-section p {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.8;
+    text-align: center;
+}
+
+.about-section img.about-img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+    border-radius: 10px;
+}
+
+.about-section ul {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.8;
+    text-align: center;
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+/* Estilo dos valores */
+.values-section {
+    background-color: #f4e8d4;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.values-section ul {
+    list-style: none; /* Remove as marcas padrões */
+    padding: 0;
+    display: inline-block;
+    text-align: left;
+}
+
+.values-section ul li {
+    display: flex;
+    align-items: center; /* Alinha os itens verticalmente */
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2rem;
+    color: #333;
+    margin: 10px 0;
+}
+
+.values-section ul li::before {
+    content: "✔"; /* Adiciona uma marca antes de cada valor */
+    color: #8B4513;
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+/*Seção de contato */
+.contact-section {
+    background-color: #f4e8d4;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-family: "Cinzel", serif;
+    color: #8B4513;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.contact-section p {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-section label {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2rem;
+    color: #333;
+    margin-top: 10px;
+    text-align: left;
+    width: 100%;
+    max-width: 500px;
+}
+
+.contact-section input.contact-input,
+.contact-section textarea.contact-textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-section input.contact-submit {
+    background-color: #8B4513;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.contact-section input.contact-submit:hover {
+    background-color: #6b3d1f;
+}
+
+/* Estilo da seção de localização */
+.location-section {
+    background-color: #f4e8d4;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.location-section h2 {
+    font-family: "Cinzel", serif;
+    color: #8B4513;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.location-section p {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+
+/* Media Queries */
+
+/* Telas grandes (desktops) */
+@media (min-width: 1024px) {
+    header .logo {
+        font-size: 3.5em;
+    }
+}
+
+nav ul{
+    flex-direction: row;
+}
+
+nav ul li{
+    margin: 0 20px;
+}
+
+.section {
+    width: 75%;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width: 50%;
+}
+
+/* Tabletes */
+@media (max-width: 1023px) and (min-widht: 768px) {
+    header .logo{
+        font-size: 3em;
+    }
+}
+
+nav ul {
+    flex-direction: row; 
+}
+
+nav ul li{
+    margin: 0 15px;
+}
+
+.section {
+    width: 85%;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width: 70%;
+}
+
+
+/* Dsipositivos móveis */
+@media (max-width: 767px)  {
+    header .logo{
+        font-size: 2.5em;
+    }
+}
+
+nav ul {
+    flex-direction: row;
+    padding: 0;
+}
+
+nav ul li{
+    margin: 10px 5px;
+}
+
+.section {
+    width: 95%;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width: 90%;
+}
